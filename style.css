@@ -9,7 +9,6 @@ body {
 }
 
 body > div {
-    outline: black 2px solid;
 }
 
 .image-column {
@@ -49,3 +48,27 @@ body > div {
     flex: 1 1 auto;
 }
 
+/* FORM SECTION */
+.form-column {
+    background-color: #172025ff;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    flex: 1;
+}
+
+.sign-up-header {
+    color:white;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 100px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.mid {
+    background-color: #192631ff;
+    flex: 2;
+}
