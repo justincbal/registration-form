@@ -12,10 +12,11 @@ body > div {
 }
 
 .image-column {
-    flex: 1 1 35%;
+    flex: 1 1;
     background-image: url(./img/cn-tower.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: max(35vw, 40vw);
 }
 
 .form-column {
@@ -34,13 +35,13 @@ body > div {
 .pray {
     filter: invert(1);
     transform: rotate(-20deg);
-    height: 200px;
+    width: max(200px, 10px);
 }
 
 .logo h2 {
     color: white;
     letter-spacing: 2px;
-    font-size: 2.5vw;
+    font-size: clamp(2.5vw, 1rem, 1vw);
     white-space: nowrap;
 }
 
@@ -50,25 +51,42 @@ body > div {
 
 /* FORM SECTION */
 .form-column {
-    background-color: #172025ff;
+    width: max(65vw, 60vw);
     display: flex;
     flex-direction: column;
+    background-color: #F9FAFB;
+    
 }
 
-.row {
+.form-column > div{
     flex: 1;
 }
 
-.sign-up-header {
-    color:white;
-    text-align: center;
-    margin-top: 50px;
-    padding: 0 100px;
-    font-size: 40px;
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top h2 {
     letter-spacing: 2px;
 }
 
 .mid {
-    background-color: #192631ff;
-    flex: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    padding: 10px;
+}
+
+.mid h2 {
+    letter-spacing: 2px;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
 }
