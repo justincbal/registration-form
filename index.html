@@ -4,62 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
+    <title>Registration form</title>
 </head>
 <body>
-    <div class="image-column">
-        <div class="logo">
-            <h2>Views from the</h2>
-            <img src="./img/drake.png" alt="praying hands logo" class="pray">
-        </div>
-    </div>
-    <div class="form-column">
-        <div class="row top">
-            <h2>This isn't a real service! But sign up regardless!</h2>
-        </div>
-        <div class="row mid">
-            <h2>Registration</h2>
-            <form action="" method="post">
+    
+
+    
+
+        
+            <div class="heading">
+                <h1 class="font h1">Registration</h1>
+                <h3 class="font h2">Fill in personal information below</h3>
+            </div>
+            <form action="/" method="get" id="form" autocomplete="off">
 
                 <div class="form-row">
-                    <div class="form-col">
-                        <label for="first-name">First name:</label>
-                        <input type="text" id="first-name" name="firstName" placeholder="John" required>
-                    </div>
-                    <div class="form-col">
-                        <label for="last-name">Last name:</label>
-                        <input type="text" id="last-name" name="lastName" placeholder="Smith" required>
-                    </div>
+                    <label for="fName" class="req">First name: </label>
+                    <input type="text" name="fName" class="fName">
+                    <div class="error"></div>
                 </div>
-
+        
                 <div class="form-row">
-                    <div class="form-col">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="johnSmith@hotmail.com" required>
-                    </div>
-                    <div class="form-col">
-                        <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phoneNum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-4567-8901" required>
-                    </div>
+                    <label for="mName">Middle name: </label>
+                    <input type="text" name="mName" class="mName">
+                    <div class="error"></div>
                 </div>
-
+                
                 <div class="form-row">
-                    <div class="form-col">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <div class="form-col">
-                        <label for="conPass">Confirm password:</label>
-                        <input type="password" id="conPass" name="conPass" required>
-                    </div>
+                    <label for="lName" class="req">Last name: </label>
+                    <input type="text" name="lName" class="lName">
+                    <div class="error"></div>
                 </div>
-
-                <button type="submit" class="btn">Submit</button>
-
+        
+                <div class="form-row">
+                    <label for="email" class="req">Email: </label>
+                    <input type="text" name="email" class="email">
+                    <div class="error"></div>
+                </div>
+        
+                <div class="form-row">
+                    <label for="pass" class="req">Password: </label>
+                    <input type="password" name="pass" class="pass">
+                    <div class="error"></div> 
+                </div>
+        
+                <div class="form-row">
+                    <label for="passCon" class="req">Confirm password: </label>
+                    <input type="password" name="passCon" class="passCon">
+                    <div class="error"></div>
+                </div>
+        
+                <button type="submit" class="submit">Submit</button>
+        
             </form>
         </div>
-        <div class="row">3</div>
-    </div>
+
+
+    
+    
 </body>
 </html>
