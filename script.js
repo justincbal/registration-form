@@ -6,7 +6,7 @@ const pass2 = document.querySelector('.passCon');
 const btn = document.querySelector('.submit')
 
 btn.addEventListener('click', ()=> {
-
+    console.log('TEST')
     validateForm();
 
 })
