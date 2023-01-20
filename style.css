@@ -72,6 +72,7 @@ label, input {
 
 input {
     color: black;
+    font-family: inherit;
 }
 
 label[class="req"]::after {
