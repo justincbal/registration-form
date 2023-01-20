@@ -3,9 +3,9 @@ const lName = document.querySelector('.lName');
 const email = document.querySelector('.email');
 const pass1 = document.querySelector('.pass');
 const pass2 = document.querySelector('.passCon');
+const btn = document.querySelector('.submit')
 
-
-document.addEventListener('submit', (e)=> {
+btn.addEventListener('click', (e)=> {
     e.preventDefault();
 
     validateForm();
